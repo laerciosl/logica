@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+
+<script>
+	
+	var anoAtual = 2021;	
+	var descobrimentoBrasil = 1500;
+	var idadeMedia = 28;
+	var geracoesPassadas = Math.round((anoAtual - descobrimentoBrasil) / idadeMedia);
+
+
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function exibeNaTela(geracoesPassadas) {
+		document.write("A já se passaram no total de: " + geracoesPassadas);
+		pulaLinha();
+	}
+
+
+	exibeNaTela(geracoesPassadas);
+
+
+
+</script>
