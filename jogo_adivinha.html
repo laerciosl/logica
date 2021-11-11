@@ -15,15 +15,21 @@
          return Math.round(Math.random() * numero);
     }
 
-    var numeroPensado =  sorteia(10)
-   
+    var numeroPensado =  sorteia(10);
+    var tentativas = 1;
 
-    var chute = parseInt(prompt("Informe seu chute.:"));
+    while(tentativas <= 3) {
+        var chute = parseInt(prompt("Informe seu chute.:"));
 
-    if (chute == numeroPensado) {
-        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
-    } else {
-        mostra("Você errou! Eu tinha pensado no " + numeroPensado);
+        if (chute == numeroPensado) {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            break;
+        } else {
+            mostra("Você errou! Eu tinha pensado no " + numeroPensado);
+        }
+
+        tentativas++;
     }
+    
 
 </script>

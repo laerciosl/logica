@@ -11,7 +11,19 @@
 		pulaLinha();
 	}
 
-	
+	var totalFamiliares = parseInt(prompt("Quantidade de Familiares? "));
+	var contador = 1;
+	var totalIdades = 0;
+
+	while(contador <= totalFamiliares) {
+		var idade = parseInt(prompt("Informe a idade do familiar.:"));
+		totalIdades += idade;
+		contador++;
+	}
+
+	var mediaIdades = totalIdades / totalFamiliares
+
+	exibeNaTela(mediaIdades);
 
 	exibeNaTela("FIM");
 	
